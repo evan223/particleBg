@@ -26,7 +26,7 @@ class Circle {
 		let dy = this.y - _circle.y;
 		let d = Math.sqrt(dx * dx + dy * dy);
 
-		if (d < 300 && d > 30) { // 设置粒子之间连线的最大距离，即超过这个范围的粒子之间不需要连线
+		if (d < 240 && d > 30) { // 设置粒子之间连线的最大距离，即超过这个范围的粒子之间不需要连线
 			ctx.beginPath();
 			ctx.moveTo(this.x, this.y);
 			ctx.lineTo(_circle.x, _circle.y);
